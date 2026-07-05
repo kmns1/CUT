@@ -259,7 +259,8 @@ export class Cut {
 
             this.ctx.beginPath();
             this.ctx.fillStyle = "#0e0f37";
-             this.ctx.strokeStyle = "#5b5c8f";
+             this.ctx.strokeStyle = "#454685";
+             this.ctx.lineWidth = 4;
             this.ctx.moveTo(points[0].x, points[0].y)
 
             for (let i = 1; i < points.length; i++) {
@@ -273,6 +274,7 @@ export class Cut {
 
         this.ctx.beginPath()
         this.ctx.strokeStyle = "red";
+        this.ctx.lineWidth = 1;
         this.ctx.moveTo(this.line.start.x, this.line.start.y)
         this.ctx.lineTo(this.line.end.x, this.line.end.y)
         this.ctx.stroke()
